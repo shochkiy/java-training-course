@@ -23,6 +23,5 @@ public class Main {
 
         Vector[] mass = Vector.massVector(2);
         System.out.println(mass[0].cosVec(mass[1]));
-
     }
 }
