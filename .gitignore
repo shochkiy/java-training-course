@@ -5,7 +5,7 @@
 
 # Intellij
 .idea/
-out/
+*out/
 *.iml
 *.iws
 
