@@ -1,21 +1,16 @@
 package Main;
 
-import Collections.MyArrayList;
+import Box.Box;
+import Inheritance.BoxWeight;
 
 public class Main {
     public static void main(String[] args) {
-        MyArrayList students = new MyArrayList();
-        students.add("Sotskiy");
-        students.add("Lichman");
-        students.add("Kudriashov");
-        students.add("Makchnik");
-        students.add("Strykun");
-        students.remove(1);
-        students.add("Smolianinov");
-        students.remove("Strykun");
-        for (int i =0; i<students.getSize(); i++) {
-            System.out.println(students.get(i));
-        }
-        System.out.println(students.getSize());
+        BoxWeight box10 = new BoxWeight(10,10,10,10);
+        BoxWeight box5 = new BoxWeight(5,5,5,5);
+        BoxWeight boxSum = new BoxWeight(box10, box5);
+        BoxWeight boxSumParam = boxSum.sumParameters(box5);
+        boxSum.showParameters();
+        System.out.println(" ");
+        boxSumParam.showParameters();
     }
 }
