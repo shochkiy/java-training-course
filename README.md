@@ -1,1 +1,1 @@
-# java-vector-example
+# java-training-course
